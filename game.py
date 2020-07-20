@@ -34,6 +34,12 @@ class GameReporter():
                             'kills': self.get_kills(game),
                             'kills_by_mean': self.get_kills_by_mean(game)}
         return report
+    def simple_report(self, game_id, game):
+        report = {}
+        report[game_id] =  {'total_kills': len(game.kills),
+                            'players':self.get_players(game),
+                            'kills': self.get_kills(game)}
+        return report
     def get_players(self, game):
         players = []
         for player in game.players:

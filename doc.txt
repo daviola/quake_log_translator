@@ -1,0 +1,20 @@
+===COMO USAR===
+1. Rodar no terminal o arquivo start.py utilizando python3
+2. Acessar os menus para utilizar as 5 funções:
+    - listagem simples
+    - listagem simples paginada
+    - listagem detalhada paginada
+    - busca por id de jogo
+    - ranking geral
+3. Para rodar os testes:
+
+====OBSERVAÇÕES DA IMPLEMENTAÇÃO====
+
+Para a contagem de kills:
+    - eu considerei que mesmo que o proprio player tenha se matado, conta como um kill
+    - Todos os nomes são mostrados, mesmo que a contagem de kills esteja zerada
+    - quando o <world> realiza o kill o usuario que sofreu o kill tem suas kills decrementadas mas o total de kills não é decrementado e sim acrescido, pois conta como uma kill de <world>
+
+Considerei que a task 2 quer um ranking geral de mortes, ou seja, considerando todos os games, e um ranking individual e detalhado
+
+Quanto a task 3, expus as funções da aplicação diretamente no terminal em forma de menus

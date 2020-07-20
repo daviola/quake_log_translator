@@ -22,7 +22,6 @@ class LogParser():
             if INIT_GAME in line:
                 if game:
                     self.games.append(game)
-                    print(game.players)
                 game = Game()
                 continue
             if USER_INFO_CHANGED in line:
