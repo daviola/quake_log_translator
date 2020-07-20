@@ -26,4 +26,30 @@ class Player():
         self.name = name
         self.kills = 0
 
+class GameReporter():    
+    def report(self, game_id, game):
+        report = {}
+        report[game_id] =  {'total_kills': len(game.kills),
+                            'players':self.get_players(game),
+                            'kills': self.get_kills(game),
+                            'kills_by_mean': self.get_kills_by_mean(game)}
+        return report
+    def get_players(self, game):
+        players = []
+        for player in game.players:
+            players.append(game.players[player].name)
+        return players
+    def get_kills(self, game):
+        kills = {}
+        for player in game.players:
+            kills[game.players[player].name] = game.players[player].kills
+        return kills
+    def get_kills_by_mean(self, game):
+        kills_by_mean = {}
+        for kill in game.kills:
+            if MEANS[int(kill.mean)] not in kills_by_mean:
+                kills_by_mean[MEANS[int(kill.mean)]] =1
+            else:
+                kills_by_mean[MEANS[int(kill.mean)]] +=1
+        return kills_by_mean
         

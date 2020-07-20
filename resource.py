@@ -26,3 +26,7 @@ MEANS = [
 ]
 
 WORLD_ID = '1022'
+BREAK_LINE = '------------------------------------------------------------'
+INIT_GAME = 'InitGame'
+USER_INFO_CHANGED = 'ClientUserinfoChanged'
+KILL = 'Kill: '
