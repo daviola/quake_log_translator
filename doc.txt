@@ -15,7 +15,7 @@ Para a contagem de kills:
     - Todos os nomes são mostrados, mesmo que a contagem de kills esteja zerada
     - quando o <world> realiza o kill o usuario que sofreu o kill tem suas kills decrementadas mas o total de kills não é decrementado e sim acrescido, pois conta como uma kill de <world>
     - considerei a troca de nomes quando ocorre o evento ClientUserinfoChanged e o nome é atualizado, substituindo sempre para o mais recente no report final
-        EX: linhas 35 e 36 do arquivo de log. usar muda o nome de 'Dono da Bola' para 'Mocinha'
+        EX: linhas 35 e 36 do arquivo de log. user muda o nome de 'Dono da Bola' para 'Mocinha'
 
 Considerei que a task 2 quer um ranking geral de mortes, ou seja, considerando todos os games, e um ranking individual e detalhado
 
