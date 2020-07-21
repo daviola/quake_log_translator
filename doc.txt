@@ -6,7 +6,7 @@
     - listagem detalhada paginada
     - busca por id de jogo
     - ranking geral
-3. Para rodar os testes:
+3. Para rodar os testes: rodar test.py utilizando python3
 
 ====OBSERVAÇÕES DA IMPLEMENTAÇÃO====
 
@@ -14,7 +14,11 @@ Para a contagem de kills:
     - eu considerei que mesmo que o proprio player tenha se matado, conta como um kill
     - Todos os nomes são mostrados, mesmo que a contagem de kills esteja zerada
     - quando o <world> realiza o kill o usuario que sofreu o kill tem suas kills decrementadas mas o total de kills não é decrementado e sim acrescido, pois conta como uma kill de <world>
+    - considerei a troca de nomes quando ocorre o evento ClientUserinfoChanged e o nome é atualizado, substituindo sempre para o mais recente no report final
+        EX: linhas 35 e 36 do arquivo de log. usar muda o nome de 'Dono da Bola' para 'Mocinha'
 
 Considerei que a task 2 quer um ranking geral de mortes, ou seja, considerando todos os games, e um ranking individual e detalhado
 
 Quanto a task 3, expus as funções da aplicação diretamente no terminal em forma de menus
+
+Quanto aos relatórios, estou imprimindo diretamente em terminal, com a opção de paginação para facilitar a visualização, mas poderia fácilmente ser adaptado para gravar os relatórios em arquivo.
